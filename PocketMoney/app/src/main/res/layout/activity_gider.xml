@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".giderActivity"
+    android:orientation="vertical"
+    android:background="@drawable/cizgi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGelirTab"
+            android:layout_width="135dp"
+            android:layout_height="50dp"
+            android:text="GELİR"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnBakiyeTab"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="BAKİYE"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="GİDER"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/gider"
+        android:layout_marginTop="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerGider"
+        android:layout_width="600px"
+        android:layout_height="110px"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/spinner"
+        android:entries="@array/giderKategorileri"/>
+
+    <EditText
+        android:id="@+id/editTextGider"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Gider miktarı giriniz."
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnGiderEkle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="GİDER EKLE"
+        android:textSize="20dp"/>
+
+    <ListView
+        android:id="@+id/listViewGider"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
